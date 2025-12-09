@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+.teaser {
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("welcome-bg.jpg");
+  background-color: #fff;
+  background-position: right center;
+  background-size: auto 140%;
+
+  min-height: 100%;
+  padding: 0 3%;
+
+  text-align: center;
+
+  .welcome-logo {
+    padding: 20px 0 0 10px;
+    text-align: left;
+
+    @media (max-width: 500px) {
+      text-align: center;
+    }
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin: 3% 0;
+  }
+
+  #welcome-next-contest {
+    margin: 30px 0;
+  }
+}
