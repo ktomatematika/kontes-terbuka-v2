@@ -63,5 +63,10 @@ body {
   .item {
     text-align: center;
     padding-inline: 15px;
+
+    .bi {
+      font-size: 2em;
+      padding: 10px 0;
+    }
   }
 }
