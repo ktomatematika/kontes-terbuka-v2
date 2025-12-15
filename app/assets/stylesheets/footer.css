@@ -1,0 +1,36 @@
+.app-footer {
+  background: #000;
+  margin-top: 20px;
+  padding: 0 5% 3%;
+  text-align: center;
+
+  .links {
+    padding-top: 2em;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+
+    li {
+      padding: 5px 0;
+
+      a {
+        color: #fff;
+        display: inline-block;
+        margin: 0 10px 10px;
+        text-decoration: none;
+
+        &:hover {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .footer-text {
+    color: #fff;
+  }
+}
