@@ -9,12 +9,29 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
+:root {
+  --color-red: #e53333;
+  --color-blue: #337fff;
+  --color-green: #33b24c;
+  --color-yellow: #ffb200;
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
+  --accent: var(--color-red);
+
+  --accent-l5: hsl(from var(--accent) h s calc(l + 5));
+  --accent-l10: hsl(from var(--accent) h s calc(l + 10));
+  --accent-l15: hsl(from var(--accent) h s calc(l + 15));
+  --accent-l20: hsl(from var(--accent) h s calc(l + 20));
+
+  --accent-d5: hsl(from var(--accent) h s calc(l - 5));
+  --accent-d10: hsl(from var(--accent) h s calc(l - 10));
+
   background: #f3f3ee;
   font-size: 18px;
   font-weight: 100;
@@ -22,6 +39,22 @@ body {
   font-size: 20px;
 
   /* padding-top: 90px; */
+
+  &.accent-red {
+    --accent: var(--color-red);
+  }
+
+  &.accent-blue {
+    --accent: var(--color-blue);
+  }
+
+  &.accent-green {
+    --accent: var(--color-green);
+  }
+
+  &.accent-yellow {
+    --accent: var(--color-yellow)
+  }
 }
 
 h1,
