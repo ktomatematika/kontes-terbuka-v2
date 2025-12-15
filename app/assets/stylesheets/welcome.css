@@ -61,3 +61,25 @@
     }
   }
 }
+
+.welcome.testimonies {
+  background: #fff;
+  padding: 3%;
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  blockquote {
+    border-color: #ccc;
+    margin: 5px 30px;
+  }
+
+  blockquote:first-child {
+    margin-top: 0;
+  }
+
+  blockquote:last-child {
+    margin-bottom: 0;
+  }
+}

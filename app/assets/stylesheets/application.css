@@ -18,8 +18,10 @@ body {
   background: #f3f3ee;
   font-size: 18px;
   font-weight: 100;
-  /* padding-top: 90px; */
   font-family: "museo-sans", sans-serif;
+  font-size: 20px;
+
+  /* padding-top: 90px; */
 }
 
 h1,
@@ -79,4 +81,30 @@ h3,
 
 p {
   margin: 0 0 10px;
+}
+
+blockquote {
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	font-size: 17.5px;
+	border-left: 5px solid #eeeeee;
+  font-size: inherit;
+
+  &.blockquote-reverse {
+	  padding-right: 15px;
+	  padding-left: 0;
+	  text-align: right;
+	  border-right: 5px solid #eeeeee;
+	  border-left: 0;
+  }
+
+  footer {
+    font-size: 0.8em;
+	  display: block;
+	  color: #777777;
+
+    &::before {
+	    content: "\2014 \00A0";
+    }
+  }
 }
