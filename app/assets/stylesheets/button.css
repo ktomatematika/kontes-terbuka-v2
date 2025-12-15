@@ -1,0 +1,19 @@
+.btn {
+  background-color: var(--accent-l15);
+  border-color: var(--accent);
+
+  &:hover:not([disabled]) {
+    background-color: var(--accent-l10);
+    border-color: var(--accent-d5);
+  }
+
+  &:active:not([disabled]) {
+    background-color: var(--accent-l5);
+    border-color: var(--accent-d10);
+  }
+}
+
+.btn-lg {
+  font-size: 1.2em;
+  border-radius: 6px;
+}
