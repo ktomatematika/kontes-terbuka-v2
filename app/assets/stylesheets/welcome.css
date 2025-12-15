@@ -1,8 +1,3 @@
-html,
-body {
-  height: 100%;
-}
-
 .teaser {
   background:
     linear-gradient(
@@ -12,12 +7,13 @@ body {
     ),
     url("welcome-bg.jpg");
   background-color: #fff;
-  background-position: right center;
-  background-size: auto 140%;
+  background-position: center center;
+  background-size: cover;
 
   min-height: 100%;
   padding: 0 3%;
 
+  font-size: 18px;
   text-align: center;
 
   .welcome-logo {
