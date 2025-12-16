@@ -38,6 +38,9 @@ body {
   font-family: "museo-sans", sans-serif;
   font-size: 20px;
 
+  display: flex;
+  flex-direction: column;
+
   /* padding-top: 90px; */
 
   &.accent-red {
@@ -148,6 +151,7 @@ blockquote {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  flex: 1;
 
   @media (min-width: 768px) {
     width: 750px;
