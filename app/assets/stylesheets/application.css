@@ -41,7 +41,15 @@ body {
   display: flex;
   flex-direction: column;
 
-  /* padding-top: 90px; */
+  padding-top: 90px;
+
+  &[data-no-nav="true"] {
+    padding-top: 0;
+
+    .navbar {
+      display: none;
+    }
+  }
 
   &.accent-red {
     --accent: var(--color-red);
@@ -120,7 +128,8 @@ a {
   text-decoration: none;
   background-color: transparent;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #23527c;
     text-decoration: underline;
     outline: 0;
