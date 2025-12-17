@@ -115,6 +115,18 @@ h3,
   margin-bottom:10px
 }
 
+a {
+  color: #337ab7;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:hover, &:focus {
+    color: #23527c;
+    text-decoration: underline;
+    outline: 0;
+  }
+}
+
 p {
   margin: 0 0 10px;
 }
