@@ -38,7 +38,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="accent-red">
+  <body class="accent-red" data-no-nav="<%= yield :no_nav %>">
+    <%= render "layouts/navbar" %>
+
     <%= yield %>
 
     <%= render "layouts/footer" %>
