@@ -7,7 +7,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
 
     volumes:
-    - ../../kontes_terbuka:/workspaces/kontes_terbuka:cached
+      -  ..:/workspaces/kontes-terbuka-v2:cached
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
