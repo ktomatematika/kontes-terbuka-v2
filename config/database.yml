@@ -92,9 +92,10 @@ test:
 production:
   primary: &primary_production
     <<: *default
+    host: <%= Rails.application.credentials.dig(:database, :host) %>
     database: kontes_terbuka_production
-    username: kontes_terbuka
-    password: <%= ENV["KONTES_TERBUKA_DATABASE_PASSWORD"] %>
+    username: ktom
+    password: <%= Rails.application.credentials.dig(:database, :password) %>
   cache:
     <<: *primary_production
     database: kontes_terbuka_production_cache
