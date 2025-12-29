@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+bin/rubocop
+npm run prettier:lint
+npm run herb:format:check
+npm run herb:lint
