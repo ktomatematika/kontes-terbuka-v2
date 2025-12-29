@@ -1,0 +1,23 @@
+{
+  "name": "kontes-terbuka-v2",
+  "version": "1.0.0",
+  "description": "Codebase baru KTOM yang diinisiasi pada tahun 2025 untuk menggunakan tech stack versi terbaru.",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,json,css,scss,yml,yaml}\"",
+    "lint": "prettier --check \"**/*.{js,json,css,scss,yml,yaml}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  },
+  "license": "AGPL-3.0-only",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktomatematika/kontes-terbuka-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ktomatematika/kontes-terbuka-v2/issues"
+  },
+  "homepage": "ktom-tomi.or.id"
+}
