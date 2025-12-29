@@ -48,6 +48,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: "npm"
+
+      - name: Install node dependencies
+        run: npm ci
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -70,6 +79,15 @@ jobs:
 
       - name: Lint code for consistent style
         run: bin/rubocop -f github
+
+      - name: Lint css, js, and yaml with prettier
+        run: npm run prettier:lint
+
+      - name: Lint html and erb with herb
+        run: npm run herb:lint
+
+      # - name: Lint html and erb formatting with herb
+      #   run: npm run herb:format:check
 
   test:
     runs-on: ubuntu-latest
