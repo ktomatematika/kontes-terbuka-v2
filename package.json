@@ -4,10 +4,16 @@
   "description": "Codebase baru KTOM yang diinisiasi pada tahun 2025 untuk menggunakan tech stack versi terbaru.",
   "private": true,
   "scripts": {
-    "format": "prettier --write \"**/*.{js,json,css,scss,yml,yaml}\"",
-    "lint": "prettier --check \"**/*.{js,json,css,scss,yml,yaml}\""
+    "herb:format": "herb-format",
+    "herb:format:check": "herb-format --check",
+    "herb:lint": "herb-lint",
+    "herb:lint:fix": "herb-lint --fix",
+    "prettier:format": "prettier --write \"**/*.{js,json,css,scss,yml,yaml}\"",
+    "prettier:lint": "prettier --check \"**/*.{js,json,css,scss,yml,yaml}\""
   },
   "devDependencies": {
+    "@herb-tools/formatter": "^0.8.6",
+    "@herb-tools/linter": "^0.8.6",
     "prettier": "^3.7.4"
   },
   "license": "AGPL-3.0-only",
